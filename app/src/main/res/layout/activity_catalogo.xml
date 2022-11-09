@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".catalogo">
+
+    <ImageView
+        android:id="@+id/ivPelicula"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGenero"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnGenero"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:text="GENERO"
+        app:layout_constraintEnd_toStartOf="@+id/btnAño"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAño"
+        android:layout_width="130dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+        android:text="AÑO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Género"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrecio" />
+
+    <TextView
+        android:id="@+id/tvAño2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Año"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenero" />
+
+    <Button
+        android:id="@+id/btnVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:text="VER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buscar" />
+
+    <ImageButton
+        android:id="@+id/buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/btnAño"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_search_24" />
+
+    <TextView
+        android:id="@+id/tvPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="24dp"
+        android:hint="Precio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAño" />
+
+    <TextView
+        android:id="@+id/tvPelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:hint="Pelicula"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPelicula" />
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="44dp"
+        android:hint="Descripcion"
+        app:layout_constraintStart_toEndOf="@+id/tvPelicula"
+        app:layout_constraintTop_toBottomOf="@+id/btnVer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
